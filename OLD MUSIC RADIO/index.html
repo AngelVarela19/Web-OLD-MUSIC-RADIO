@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLD MUSIC RADIO</title>
+    <link rel="icon" href="/img/old music.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>OLD MUSIC RADIO</h1>
+    </header>
+
+    <div class="navegacion">
+
+        <a class="a1" href="index.html">Inicio</a>
+        <a class="a2" href="helloworld.html">¿Quienes Somos?</a>
+        <a class="a3" href="">Contactanos</a>
+
+    </div>
+
+    <div class="contenedorinicio">
+        <img  class="logo" src="/img/old music.png" alt="" width="150px" height="150px">
+    </div>
+
+    <div class="carrusel">
+        <div class="carousel-images">
+        <img src="/img/Nirvana.jpeg" alt="">
+        <img src="/img/Slash.jpg" alt="">
+        <img src="/img/Cyndi Lauper.jpg" alt="">
+        <img src="/img/Michael Jackson.jpg" alt="">
+        <img src="/img/Rolling Stones.jpg" alt="">
+    </div>
+    </div>
+
+    <div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+
+    <section id="audio-player">
+        <audio  controls autoplay>
+           <source class="centrar" src="http://localhost:8000/stream">
+        </audio>
+    </section>
+
+        <div class="bienvenida">
+          <h4>SOMOS UNA RADIO DEDICADA A MÚSICA CLÁSICA PARA OYENTES QUE DISFRUTAN DE LA MÚSICA DE ANTES</h4>
+            <div class="Subtitulo">
+                <p>ESCUCHA LOS ÉXITOS DE LOS AÑOS 70'-80'-90'!</p>
+            </div>
+        </div>
+
+        <div class="TituloBotones">Sigue los medios más influyentes en la Zona Oriental.</div>
+
+        <div class="botones">
+            <button type="button" onclick="redirigirTeleDanli()" class="botonTeleDanlí">TeleDanlí</button>
+            <button type="button" onclick="redirigirRadioDanli()" class="botonRadioDanlí">Radio Danlí</button>
+            <button type="button" onclick="redirigirEstacionNaranja()" class="botonEstaciónNaranja">Estación Naranja</button>
+            <button type="button" onclick="redirigirOldMusicRadio()" class="botonOldMusicRadio">Old Music Radio</button>
+        </div>
+
+    <footer>
+         <div class="logofooter">
+            <img src="/img/old music.png" alt="" width="50px" height="50px">
+            </div>
+            
+            <div class="svgf">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+            </div>
+            
+            <div class="svgx">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+            </div>
+            
+            <div class="svgi">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+            </div>
+            
+     </footer>
+
+</body>
+</html>
